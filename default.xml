@@ -9,7 +9,7 @@
   <remote fetch="https://github.com/VCTLabs" name="vct"/>
 
   <project remote="yocto" revision="jethro" name="poky" path="poky"/>
-  <project remote="yocto" revision="jethro" name="meta-ti" path="poky/meta-ti"/>
+  <project remote="yocto" revision="master" name="meta-ti" path="poky/meta-ti"/>
 
   <project remote="oe" revision="jethro" name="meta-openembedded" path="poky/meta-openembedded"/>
 
