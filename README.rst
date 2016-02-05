@@ -27,14 +27,21 @@ At the end of the commands you have every metadata you need to start work with.
 
 To start a simple image build::
 
-  $ cd poky
-  $ source ./oe-init-build-env build-dir
+  $ cd bsp/poky
+  $ source ./oe-init-build-env build-dir  # you choose name of build-dir
+  $ ${EDITOR} conf/local.conf             # set MACHINE to beaglebone
   $ bitbake core-image-minimal
 
-You can use any directory to host your build.
+You can use any directory (build-dir above) to host your build.  The above commands will
+build an image for beaglebone using the core yocto BSP machine config and the default
+yocto-linux kernel.  You can replace the default BSP config with either meta-ti or the
+meta-beagleboard BSP.  This will provide a more optimal set of defaults for kernel and
+bootloader, as well as a bigger selection of kernels and TI support tools.
 
-The main source code is checked out in the poky dir above, and within poky
-as well.  See the default.xml file for details.
+The main source code is checked out in the bsp dir above, and the build dir will default
+to bsp/poky/build-dir unless you choose a different path above.
+
+See the default.xml file for repo and branch details.
 
 Contributing
 ------------
