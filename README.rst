@@ -20,7 +20,7 @@ Download the BSP source
   $ PATH=${PATH}:~/bin
   $ mkdir beagleboard-bsp
   $ cd beagleboard-bsp
-  $ repo init -u https://github.com/VCTLabs/vct-beagleboard-bsp-platform -b jethro
+  $ repo init -u https://github.com/VCTLabs/vct-beagleboard-bsp-platform -b fido
   $ repo sync
 
 At the end of the commands you have every metadata you need to start work with.
@@ -54,17 +54,17 @@ Using Development and Testing Branches
 
 Replace the repo init command above with one of the following:
 
-For developers - master
+For developers - jethro
 
 ::
 
-  $ repo init -u https://github.com/VCTLabs/vct-beagleboard-bsp-platform -b master
+  $ repo init -u https://github.com/VCTLabs/vct-beagleboard-bsp-platform -b jethro
 
-For intrepid developers and testers - master-next
+For intrepid developers and testers - master
 
 Patches are typically merged into master-next and then are merged into master
-after a testing and comment period. It’s possible that master-next has
-something you want or need.  But it’s also possible that using master-next
+after a testing and comment period. It’s possible that master has
+something you want or need.  But it’s also possible that using master
 breaks something that was working before.  Use with caution.
 
 ::
