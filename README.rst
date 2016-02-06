@@ -27,7 +27,7 @@ At the end of the commands you have every metadata you need to start work with.
 
 To start a simple image build::
 
-  $ cd bsp/poky
+  $ cd poky
   $ source ./oe-init-build-env build-dir  # you choose name of build-dir
   $ ${EDITOR} conf/local.conf             # set MACHINE to beaglebone
   $ bitbake core-image-minimal

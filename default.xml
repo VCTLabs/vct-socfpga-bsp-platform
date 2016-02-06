@@ -7,14 +7,14 @@
   <remote fetch="https://git.yoctoproject.org/git" name="meta-ti"/>
   <remote fetch="https://github.com/koenkooi" name="meta-bb"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
-  <remote fetch="https://github.com/VCTLabs" name="vct"/>
+  <remote fetch="https://github.com/sarnold" name="vct"/>
 
-  <project remote="yocto" revision="jethro" name="poky" path="poky"/>
+  <project remote="yocto" revision="da43a56d3533db37592a1698777af08f51a5800f" name="poky" path="poky"/>
   <project remote="yocto" revision="master" name="meta-ti" path="poky/meta-ti"/>
 
-  <project remote="meta-bb" revision="master" name="meta-beagleboard" path="bsp/meta-beagleboard"/>
+  <project remote="meta-bb" revision="master" name="meta-beagleboard" path="poky/meta-beagleboard"/>
 
-  <project remote="oe" revision="jethro" name="meta-openembedded" path="poky/meta-openembedded"/>
+  <project remote="oe" revision="73af5c278f6617149a46b2d2a1549bc154fa79e5" name="meta-openembedded" path="poky/meta-openembedded"/>
 
   <project remote="vct" revision="master" name="meta-small-arm-extra" path="poky/meta-small-arm-extra"/>
 
