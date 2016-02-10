@@ -24,7 +24,7 @@ Download the BSP source
   $ repo sync
 
 At the end of the commands you have every metadata you need to start work with.
-The branch yopu select above will checkout the corresponding branch HEAD commits
+The branch you select above will checkout the corresponding branch HEAD commits
 on the configured branch for each repository.
 
 See the default.xml file for repo and branch details.
