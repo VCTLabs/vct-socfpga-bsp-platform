@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <default sync-j="4" revision="jethro"/>
+  <default sync-j="4" revision="poky-jethro"/>
 
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="https://git.yoctoproject.org/git" name="meta-ti"/>
