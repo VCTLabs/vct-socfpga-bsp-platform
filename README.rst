@@ -21,7 +21,7 @@ The 2 main choices are:
     based on the latest patches and mainline branches (and some from the
     `LinuxOnArm wiki`_)
 
-.. _LinuxOnArm wiki: https://eewiki.net/display/linuxonarm/BeagleBone+Black
+.. _LinuxOnArm wiki: https://eewiki.net/display/linuxonarm/DE0-Nano-SoC+Kit
 .. _meta-small-arm-extra: https://github.com/sarnold/meta-small-arm-extra
 
 Use the branch button to select a build branch; note that upstream mainline
@@ -59,7 +59,7 @@ Download the BSP source
   $ PATH=${PATH}:~/bin
   $ mkdir socfpga-bsp
   $ cd socfpga-bsp
-  $ repo init -u https://github.com/VCTLabs/vct-socfpga-bsp-platform -b poky-krogoth
+  $ repo init -u https://github.com/VCTLabs/vct-socfpga-bsp-platform -b poky-jethro
   $ repo sync
 
 At the end of the above commands you have all the metadata you need to start
