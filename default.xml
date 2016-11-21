@@ -6,16 +6,17 @@
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="https://github.com/altera-opensource" name="altera"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
-  <remote fetch="https://github.com/sarnold" name="vct"/>
+  <remote fetch="https://github.com/sarnold" name="sla"/>
+  <remote fetch="https://github.com/VCTLabs" name="vct"/>
   <remote fetch="https://github.com/meta-qt5" name="meta-qt5"/>
 
   <project remote="yocto" revision="jethro" name="poky" path="poky"/>
 
-  <project remote="altera" revision="angstrom-v2015.12-yocto2.0" name="meta-altera" path="poky/meta-altera"/>
+  <project remote="vct" revision="" name="16.1_gsrd" path="poky/meta-altera"/>
   <project remote="altera" revision="gsrd-16.1" name="meta-altera-refdes" path="poky/meta-altera-refdes"/>
 
   <project remote="oe" revision="jethro" name="meta-openembedded" path="poky/meta-openembedded"/>
-  <project remote="vct" revision="master" name="meta-small-arm-extra" path="poky/meta-small-arm-extra"/>
+  <project remote="sla" revision="master" name="meta-small-arm-extra" path="poky/meta-small-arm-extra"/>
   <project remote="meta-qt5" revision="jethro" name="meta-qt5" path="poky/meta-qt5"/>
 
 </manifest>
