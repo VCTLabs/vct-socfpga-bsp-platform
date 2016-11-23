@@ -12,7 +12,7 @@
 
   <project remote="yocto" revision="jethro" name="poky" path="poky"/>
 
-  <project remote="vct" revision="" name="16.1_gsrd" path="poky/meta-altera"/>
+  <project remote="vct" revision="16.1_gsrd" name="meta-altera" path="poky/meta-altera"/>
   <project remote="altera" revision="gsrd-16.1" name="meta-altera-refdes" path="poky/meta-altera-refdes"/>
 
   <project remote="oe" revision="jethro" name="meta-openembedded" path="poky/meta-openembedded"/>
