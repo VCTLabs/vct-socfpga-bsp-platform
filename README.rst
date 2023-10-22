@@ -20,7 +20,7 @@ Download the BSP source
   $ PATH=${PATH}:~/bin
   $ mkdir socfpga-bsp
   $ cd socfpga-bsp
-  $ repo init -u https://github.com/VCTLabs/vct-socfpga-bsp-platform -b poky-jethro
+  $ repo init -u https://github.com/VCTLabs/vct-socfpga-bsp-platform -b poky-dunfell
   $ repo sync
 
 At the end of the commands you have every metadata you need to start work with.
@@ -29,12 +29,20 @@ on the configured branch for each repository.
 
 See the default.xml file for repo and branch details.
 
+NOTE: the manifest file currently contains more than one BSP layer, so you must
+choose only one in a given build. You must only enable one of the following in your
+bblayers.conf file:
+
+* meta-intel-fpga-refdes - The official Yocto Project BSP layer for Intel SoCFPGA Golden Software Reference Design (GSRD)
+* meta-intel-fpga - The official OpenEmbedded/Yocto BSP layer for Intel SoCFPGA platforms
+* meta-altera - The official OpenEmbedded/Yocto BSP layer for Altera SoCFPGA platforms
+
 To start a simple image build::
 
   $ cd poky
   $ source ./oe-init-build-env build-dir  # you choose name of build-dir
-  $ ${EDITOR} conf/local.conf             # set MACHINE to cyclone5
-  $ ${EDITOR} conf/bblayers.conf          # replace meta-yocto-bsp with meta-altera
+  $ ${EDITOR} conf/local.conf             # set MACHINE to arria10
+  $ ${EDITOR} conf/bblayers.conf          # set only one BSP
   $ bitbake core-image-minimal
 
 You can use any directory (build-dir above) to host your build.  The above commands will
@@ -63,11 +71,11 @@ Using Development and Testing Branches
 
 Replace the repo init command above with one of the following:
 
-For developers - krogoth
+For developers - kirkstone
 
 ::
 
-  $ repo init -u https://github.com/VCTLabs/vct-socfpga-bsp-platform -b poky-krogoth
+  $ repo init -u https://github.com/VCTLabs/vct-socfpga-bsp-platform -b poky-kirkstone
 
 For intrepid developers and testers - master
 
